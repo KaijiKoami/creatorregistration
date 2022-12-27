@@ -5,80 +5,153 @@
 </head>
 
 <body>
-    <div class="buttongroup">
-        <div class="buttonrow">
-            <button id="openwindowbutton">Open Window</button>
-            <button id="closewindowbutton">Close Window</button>
+    <!-- 画像提出form -->
+    <div id = "forms">
+      <div class = "item__box">
+        <p class="item__title">TikTokQRの提出</p>
+        <form class = "item__contet" action="test.html" method="post" enctype="multipart/form-data" >
+          <div>
+            <input type="file" accept='image/*' onchange="previewImage(this);">
+          </div>
+        </form>
+        <p class = "preview__image">
+          Preview:<br>
+          <img id="preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:200px;">
+        </p>
+        <script>
+        function previewImage(obj)
+        {
+          var fileReader = new FileReader();
+          fileReader.onload = (function() {
+            document.getElementById('preview').src = fileReader.result;
+          });
+          fileReader.readAsDataURL(obj.files[0]);
+        }
+        </script>
+      </div>
+      <form method="post" action="test.html">
+        <div class = "item__box">
+          <p class="item__title">投稿ジャンル</p>
+          <fieldset class = "item__contet">
+            <legend>※普段TikTokで投稿している動画のジャンルをお答えください。</legend>
+            <p>※3つまで選択可能<br></p>
+            <span>
+              <input type="checkbox" id="カップル" name="genre">
+              <label for="カップル">カップル</label>
+            </span>
+            <span>
+              <input type="checkbox" id="エンタメ" name="genre">
+              <label for="エンタメ">エンタメ</label>
+            </span>
+            <span>
+              <input type="checkbox" id="料理" name="genre">
+              <label for="料理">料理</label>
+            </span>
+            <span>
+              <input type="checkbox" id="ファッション" name="genre">
+              <label for="ファッション">ファッション</label>
+            </span>
+            <span>
+              <input type="checkbox" id="ペット" name="genre">
+              <label for="ペット">ペット</label>
+            </span>
+            <span>
+              <input type="checkbox" id="美容" name="genre">
+              <label for="美容">美容</label>
+            </span>
+            <span>
+              <input type="checkbox" id="ファミリー" name="genre">
+              <label for="ファミリー">ファミリー</label>
+            </span>
+            <span>
+              <input type="checkbox" id="スポーツ" name="genre">
+              <label for="スポーツ">スポーツ</label>
+            </span>
+            <span>
+              <input type="checkbox" id="アニメ・漫画" name="genre">
+              <label for="アニメ・漫画">アニメ・漫画</label>
+            </span>
+            <span>
+              <input type="checkbox" id="イラスト" name="genre">
+              <label for="イラスト">イラスト</label>
+            </span>
+            <span>
+              <input type="checkbox" id="旅行" name="genre">
+              <label for="旅行">旅行</label>
+            </span>
+            <span>
+              <input type="checkbox" id="音楽" name="genre">
+              <label for="音楽">音楽</label>
+            </span>
+            <span>
+              <input type="checkbox" id="フィットネス" name="genre">
+              <label for="フィットネス">フィットネス</label>
+            </span>
+            <span>
+              <input type="checkbox" id="VLOG" name="genre">
+              <label for="VLOG">VLOG</label>
+            </span>
+            <span>
+              <input type="checkbox" id="ビジネス" name="genre">
+              <label for="ビジネス">ビジネス</label>
+            </span>
+            <span>
+              <input type="checkbox" id="ライフハック" name="genre">
+              <label for="ライフハック">ライフハック</label>
+            </span>
+            <span>
+              <input type="checkbox" id="グルメ" name="genre">
+              <label for="グルメ">グルメ</label>
+            </span>
+            <script>
+              const checkMax = 3;
+              const checkBoxes = document.getElementsByName('genre');
+  
+              function checkCount(target) {
+                let checkCount = 0;
+                checkBoxes.forEach(checkBox => {
+                  if (checkBox.checked) {
+                    checkCount++;
+                  }
+                });
+                if (checkCount > checkMax) {
+                  alert('最大3つまで');
+                  target.checked = false;
+                }
+              }
+  
+              checkBoxes.forEach(checkBox => {
+                checkBox.addEventListener('change', () => {
+                  checkCount(checkBox);
+                })
+              });
+              </script>
+          </fieldset>
         </div>
-        <div class="buttonrow">
-            <button id="getaccesstoken">Get Access Token</button>
-            <button id="getprofilebutton">Get Profile</button>
-            <button id="sendmessagebutton">Send Message</button>
+        <div class = "item__box">
+          <p class="item__title">性別</p>
+            <div class = "item__contet">
+              <input type="radio" id="inq1" name="num_of_inq" value="1">
+              <label for="inq1">男性</label>
+              <input type="radio" id="inq2" name="num_of_inq" value="2">
+              <label for="inq2">女性</label>
+              <input type="radio" id="inq3" name="num_of_inq" value="3">
+              <label for="inq3">その他</label>
+              <input type="radio" id="inq4" name="num_of_inq" value="4">
+              <label for="inq4">回答しない</label>
+            </div>
         </div>
-    </div>
-
-    <div id="accesstokendata">
-        <h2>Access Token</h2>
-        <a href="#" onclick="toggleAccessToken()">Close Access Token</a>
-        <table border="1">
-            <tr>
-                <th>accessToken</th>
-                <td id="accesstokenfield"></td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="profileinfo">
-        <h2>Profile</h2>
-        <a href="#" onclick="toggleProfileData()">Close Profile</a>
-        <div id="profilepicturediv">
+        <div class = "item__box">
+          <p class="item__title">年齢</p>
+          <p class = "item__contet"><input class = "item__contet" type="text" maxlength="3" placeholder="20"><span> 歳</span></p>
         </div>
-        <table border="1">
-            <tr>
-                <th>userId</th>
-                <td id="useridprofilefield"></td>
-            </tr>
-            <tr>
-                <th>displayName</th>
-                <td id="displaynamefield"></td>
-            </tr>
-            <tr>
-                <th>statusMessage</th>
-                <td id="statusmessagefield"></td>
-            </tr>
-        </table>
+        <div class = "item__box">
+          <p class="item__title">居住地（都道府県）</p>
+          <p class = "item__contet"><input class = "item__contet" type="text" maxlength="10" id="address" placeholder="東京都"/></p>
+          <p class = "item__contet"><input type="submit" value="会員登録を行う"></p>
+         </div>
+      </form>
     </div>
-
-    <div id="liffdata">
-        <h2>LIFF Data</h2>
-        <table border="1">
-            <tr>
-                <th>language</th>
-                <td id="languagefield"></td>
-            </tr>
-            <tr>
-                <th>context.viewType</th>
-                <td id="viewtypefield"></td>
-            </tr>
-            <tr>
-                <th>context.userId</th>
-                <td id="useridfield"></td>
-            </tr>
-            <tr>
-                <th>context.utouId</th>
-                <td id="utouidfield"></td>
-            </tr>
-            <tr>
-                <th>context.roomId</th>
-                <td id="roomidfield"></td>
-            </tr>
-            <tr>
-                <th>context.groupId</th>
-                <td id="groupidfield"></td>
-            </tr>
-        </table>
-    </div>
-    
-    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-    <script src="liff-starter.js"></script>
-</body>
+    </body>
+  </html>
+  
