@@ -198,3 +198,72 @@ html, body {
  *****************************居住地****************************
  **************************************************************/
 
+ #residence {
+  padding-bottom: 20px;
+  position: relative;
+  width: 230px;
+}
+
+#residence select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  background:#FFFFFF;
+  border: 1px solid #999999;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+  position:relative;
+  height: 40px;
+  width: 230px;
+}
+#residence label{
+  position:relative;
+}
+#residence label::after {
+  content:"";
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
+  right: 16px;
+  height: 8px;
+  margin-top: -5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position:absolute;
+  top:50%;
+  width: 8px;
+}
+
+/**************************************************************
+ ***************************送信ボタン***************************
+ **************************************************************/
+
+#sendbtn{
+  margin:0 0 10px;
+}
+
+#sendbtn input[type=submit] {
+  background-color: #FFFFFF;
+  border:1px solid #999999;
+  border-radius: 2px;
+  color: #333333;
+  cursor:pointer;
+  display: block;
+  font-size: 14px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 180px;
+}
+#sendbtn input[type=submit]:hover {
+  background-color: #999999;
+  color: #FFFFFF;
+}
