@@ -133,7 +133,7 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   margin-right: 8px;
   padding: 0 0 0 24px;
   position: relative;
@@ -217,10 +217,11 @@ html, body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   cursor: pointer;
+  font-size: 16px;
   /* padding: 10px; */
   position:relative;
   height: 30px;
-  width: 80px;
+  width: 120px;
 }
 #residence label{
   position:relative;
@@ -250,7 +251,7 @@ html, body {
 #sendbtn input[type=submit] {
   background-color: #FFFFFF;
   border:1px solid #999999;
-  border-radius: 0.2px;
+  border-radius: 0;
   color: #333333;
   cursor:pointer;
   display: block;
