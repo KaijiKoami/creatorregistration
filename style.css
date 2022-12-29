@@ -22,6 +22,11 @@ html, body {
     padding: 5%;
   }
 
+
+/**************************************************************
+                            QRフォーム 
+ **************************************************************/
+  
   #setQR {
     padding-bottom: 20px;
     width: 460px;
@@ -53,3 +58,61 @@ html, body {
   #setQR input[type=file] {
     display: none;
   }
+
+/**************************************************************
+                            ジャンル
+ **************************************************************/
+
+ #genre {
+  padding-bottom: 20px;
+}
+#genre h4 {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+#genre input[type=checkbox] {
+  display: none;
+  margin: 0;
+}
+#genre input[type=checkbox] + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5px;
+  margin-right: 12px;
+  padding: 0 0 0 24px;
+  position: relative;
+}
+#genre input[type=checkbox] + label::before {
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  margin-top: -9px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 16px;
+  width: 16px;
+}
+#genre input[type=checkbox]:checked + label::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+#genre input[type=checkbox]:checked + label::after {
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
+  left: 3px;
+  margin-top: -6px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  height: 6px;
+  width: 10px;
+}
