@@ -215,7 +215,7 @@ h4 {
   /* padding: 10px; */
   position:relative;
   height: 30px;
-  width: 120px;
+  width: 140px;
 }
 #residence label{
   position:relative;
@@ -243,6 +243,8 @@ h4 {
 }
 
 #sendbtn input[type=submit] {
+  appearance: none;
+  -webkit-appearance: none;
   background-color: #FFFFFF;
   border:1px solid #999999;
   border-radius: 0;
