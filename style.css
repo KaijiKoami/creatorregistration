@@ -16,3 +16,35 @@ html, body {
   .item__box{
     padding: 5%;
   }
+
+  #setQR {
+    padding-bottom: 20px;
+    width: 460px;
+  }
+  
+  #setQR label {
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+    display:block;
+    font-size:14px;
+    padding: 10px;
+    position:relative;
+    height: 40px;
+    width: 230px;
+  }
+  #setQR label::before {
+    content:"＋";
+    color:#333333;
+    font-size:20px;
+    line-height:1;
+    margin-top: -9px;
+    right:10px;
+    position:absolute;
+    top:50%;
+  }
+  #setQR input[type=file] {
+    display: none;
+  }

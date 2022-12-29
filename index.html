@@ -7,15 +7,17 @@
 <body>
     <!-- 画像提出form -->
     <div id = "forms">
-      <div class = "item__box">
+      <div class = "item__box" id = "setQR">
         <p class="item__title">TikTokQRの提出</p>
         <form class = "item__contet" action="test.html" method="post" enctype="multipart/form-data" >
           <div>
-            <input type="file" accept='image/*' onchange="previewImage(this);">
+            <label for="file_photo">
+              画像を選択してください
+              <input type="file" accept='image/*' id="file_photo" onchange="previewImage(this);">
+            </label>          
           </div>
         </form>
         <p class = "preview__image">
-          Preview:<br>
           <img id="preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:200px;">
         </p>
         <script>
