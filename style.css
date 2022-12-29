@@ -239,7 +239,7 @@ h4 {
  **************************************************************/
 
 #sendbtn{
-  margin:0 0 10px;
+  margin:10px;
 }
 
 #sendbtn input[type=submit] {
