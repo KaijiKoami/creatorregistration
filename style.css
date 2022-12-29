@@ -267,3 +267,11 @@ html, body {
   background-color: #999999;
   color: #FFFFFF;
 }
+#sendbtn input[disabled=disabled] {
+  cursor:default;
+  opacity: 0.5;
+}
+.msr_sendbtn_05 input[disabled=disabled]:hover {
+  background-color: #FFFFFF;
+  color: #333333;
+}
