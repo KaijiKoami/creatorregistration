@@ -25,7 +25,6 @@ h4 {
   
   #setQR {
     padding-bottom: 20px;
-    width: 460px;
   }
   
   #setQR label {
@@ -169,7 +168,6 @@ h4 {
 
 #age {
   padding-bottom: 20px;
-  width: 460px;
 }
 #age label {
   display: block;
@@ -196,7 +194,6 @@ h4 {
  #residence {
   padding-bottom: 20px;
   position: relative;
-  width: 230px;
 }
 
 #residence select {
