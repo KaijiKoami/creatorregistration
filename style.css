@@ -249,10 +249,9 @@ h4 {
   border:1px solid #999999;
   border-radius: 0;
   color: #FFFFFF;
-  text-shadow: 1px 0 0 #333, 0 1px 0 #333, -1px 0 0 #333, 0 -1px 0 #333;
   cursor:pointer;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   padding: 14px;
   text-align: center;
   text-decoration: none;
