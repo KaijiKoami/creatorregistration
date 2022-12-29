@@ -78,7 +78,7 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  line-height: 4px;
+  line-height: 16px;
   margin-right: 8px;
   padding: 0 0 0 24px;
   position: relative;
@@ -133,9 +133,9 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  line-height: 4px;
+  line-height: 16px;
   margin-right: 8px;
-  padding: 0 0 0px 24px;
+  padding: 0 0 0 24px;
   position: relative;
 }
 #sex input[type=radio] + label::before {
