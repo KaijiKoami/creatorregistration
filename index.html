@@ -8,12 +8,12 @@
   <body text = "White">
     <!-- 画像提出form -->
     <div id = "forms">
-      <form class = "item__contet" action="" method="post">
+      <form class = "item__contet" action="https://script.google.com/macros/s/AKfycbx8hgaxrpK1W80aIuGw8bRQg5LEl2VB-9liIU_M0BUrkmrnwED3hKv1nGpcvK1p4fjv/exec" method="get" accept-charset="UTF-8" >
         <div class = "item__box" id = "setQR">
           <h4 class="item__title">TikTokQRの提出</h4>
           <label for="file_photo">
             画像を選択してください
-            <input type="file" accept='image/*' onchange="previewImage(this);" required>
+            <input type="file" accept='image/*' name="qr_file" onchange="previewImage(this);" required>
           </label>
           <p class = "preview__image">
             <img id="preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:200px;">
