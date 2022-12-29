@@ -179,7 +179,7 @@ html, body {
 }
 #age label {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 5px;
 }
 #age input[type=number] {
@@ -188,7 +188,7 @@ html, body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
   height: 40px;
   width: 150px;
