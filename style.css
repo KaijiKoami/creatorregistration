@@ -77,8 +77,8 @@ html, body {
 #genre input[type=checkbox] + label {
   cursor: pointer;
   display: inline-block;
-  font-size: 18px;
-  line-height: 3px;
+  font-size: 14px;
+  line-height: 4px;
   margin-right: 8px;
   padding: 0 0 0 24px;
   position: relative;
@@ -133,7 +133,7 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  line-height: 3px;
+  line-height: 4px;
   margin-right: 8px;
   padding: 0 0 0px 24px;
   position: relative;
