@@ -13,6 +13,9 @@ html, body {
     text-align: left;
   }
   
+form {
+  margin: 20;
+}
 
 h4 {
     font-size: 20px;
