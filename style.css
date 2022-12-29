@@ -213,6 +213,7 @@ h4 {
   cursor: pointer;
   font-size: 16px;
   /* padding: 10px; */
+  color: #000;
   position:relative;
   height: 30px;
   width: 140px;
@@ -252,7 +253,7 @@ h4 {
   cursor:pointer;
   display: block;
   font-size: 20px;
-  padding: 14px;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
   transition: 0.2s ease-in-out;
