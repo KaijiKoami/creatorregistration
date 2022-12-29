@@ -22,9 +22,12 @@ html, body {
     padding: 5%;
   }
 
+  #genre h4 {
+    padding-bottom: 5px;
+  }
 
 /**************************************************************
-                            QRフォーム 
+ ***************************QRフォーム***************************
  **************************************************************/
   
   #setQR {
@@ -60,15 +63,13 @@ html, body {
   }
 
 /**************************************************************
-                            ジャンル
+ *****************************ジャンル***************************
  **************************************************************/
 
- #genre {
+#genre {
   padding-bottom: 20px;
 }
-#genre h4 {
-  padding-bottom: 5px;
-}
+
 #genre input[type=checkbox] {
   display: none;
   margin: 0;
@@ -114,4 +115,59 @@ html, body {
   -webkit-transform: rotate(-45deg);
   height: 6px;
   width: 10px;
+}
+
+/**************************************************************
+ ******************************性別*****************************
+ **************************************************************/
+
+#sex {
+  padding-bottom: 20px;
+}
+#sex p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+#sex input[type=radio] {
+  display: none;
+  margin: 0;
+}
+#sex input[type=radio] + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5px;
+  margin-right: 12px;
+  padding: 0 0 0px 24px;
+  position: relative;
+}
+#sex input[type=radio] + label::before {
+  border: 1px solid #777777;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  margin-top: -9px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 16px;
+  width: 16px;
+}
+#sex input[type=radio]:checked + label::after {
+  background: #333333;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  margin-top: -4px;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  height: 8px;
+  width: 8px;
 }
