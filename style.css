@@ -124,10 +124,7 @@ html, body {
 #sex {
   padding-bottom: 20px;
 }
-#sex p {
-  font-size: 14px;
-  padding-bottom: 5px;
-}
+
 #sex input[type=radio] {
   display: none;
   margin: 0;
@@ -137,7 +134,7 @@ html, body {
   display: inline-block;
   font-size: 14px;
   line-height: 1.5px;
-  margin-right: 12px;
+  margin-right: 8px;
   padding: 0 0 0px 24px;
   position: relative;
 }
@@ -170,4 +167,29 @@ html, body {
   top: 0;
   height: 8px;
   width: 8px;
+}
+
+/**************************************************************
+ ******************************年齢*****************************
+ **************************************************************/
+
+#age {
+  padding-bottom: 20px;
+  width: 460px;
+}
+#age label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+#age input[type=number] {
+  background: #fff;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 14px;
+  padding: 10px;
+  height: 40px;
+  width: 460px;
 }
