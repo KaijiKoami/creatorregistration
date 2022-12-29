@@ -3,6 +3,11 @@ html, body {
     margin: 15;
     padding: 0;
   }
+
+  body {
+    background-image: url("img/背景画像.jpeg");
+    background-size: cover;
+  }
   
   .item__title {
     font-size: 20px;
