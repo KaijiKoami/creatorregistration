@@ -78,7 +78,7 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
-  line-height: 1.5px;
+  line-height: 3px;
   margin-right: 8px;
   padding: 0 0 0 24px;
   position: relative;
@@ -133,7 +133,7 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  line-height: 1.5px;
+  line-height: 3px;
   margin-right: 8px;
   padding: 0 0 0px 24px;
   position: relative;
@@ -191,5 +191,5 @@ html, body {
   font-size: 14px;
   padding: 10px;
   height: 40px;
-  width: 1500px;
+  width: 150px;
 }
