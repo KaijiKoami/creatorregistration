@@ -12,16 +12,6 @@
     <!-- パラメータを追加する関数 -->
     function addParam() {
 
-      liff
-      .getProfile()
-      .then((profile) => {
-        const name = profile.displayName;
-        const id = profile.userId;
-      })
-      .catch((err) => {
-        console.log("error", err);
-      });
-
       // 追加で送信するパラメータ
       var newValue = document.createElement('input');
       // 画面に表示されてしまうので、隠す
@@ -29,7 +19,7 @@
       // パラメータ名
       newValue.name = "id";
       // パラメータ値
-      newValue.value = id;
+      newValue.value = useridfield;
 
       // フォームの要素に加えることで、submit時に追加したパラメータも送信される
       document.forms[0].appendChild(newValue);
@@ -234,6 +224,8 @@
       </div>
     </form>
   </div>
+  <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+  <script src="liff.js"></script>
 </body>
 
 </html>
