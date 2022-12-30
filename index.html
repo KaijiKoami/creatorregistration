@@ -8,27 +8,9 @@
 
 <body text="White">
   <!-- 画像提出form -->
-  <script>
-    <!-- パラメータを追加する関数 -->
-    function addParam() {
-
-      // 追加で送信するパラメータ
-      var newValue = document.createElement('input');
-      // 画面に表示されてしまうので、隠す
-      newValue.type = "hidden";
-      // パラメータ名
-      newValue.name = "id";
-      // パラメータ値
-      newValue.value = useridfield;
-
-      // フォームの要素に加えることで、submit時に追加したパラメータも送信される
-      document.forms[0].appendChild(newValue);
-
-    }
-  </script>
   <div id="forms">
     <form class="item__contet"
-      action="https://script.google.com/macros/s/AKfycbwOSaVtlQfvw3Ps96-seKa8RGEBdSDBNVXiUBl0VgjU8ausgp15Cw_IcyPsQj6LHvYN/exec"
+      action="https://script.google.com/macros/s/AKfycbzwvcVVSLgUsklnKIVr8GP-nruZDxG_IJuIzioVQFic_h2bkOAFqvvqRVN0U5J-yWME/exec"
       method="POST">
       <div class="item__box" id="setQR">
         <h4 class="item__title">TikTokQRの提出</h4>
@@ -219,6 +201,7 @@
           <option value="沖縄県">沖縄県</option>
         </select>
       </div>
+      <input type="hidden" id="useridfield" name="useridfield" value="useridfield"　>
       <div class="item__box" id="sendbtn">
         <input type="submit" value="Register" onClick="addParam()">
       </div>
