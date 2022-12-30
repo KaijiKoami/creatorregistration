@@ -1,4 +1,4 @@
-<html>
+form<html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>クリエイター登録</title>
@@ -13,7 +13,7 @@
           <h4 class="item__title">TikTokQRの提出</h4>
           <label for="file_photo">
             画像を選択してください
-            <input type="file" accept='image/*' id="file_photo" name="qr_file" onchange="previewImage(this);" required>
+            <input type="file" accept='image/*' id="file_photo" name="qr_file" onchange="previewImage(this);">
           </label>
           <p class = "preview__image">
             <img id="preview" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:200px;">
@@ -34,7 +34,7 @@
           <p>TikTokで投稿している動画のジャンルを<strong>3つまで</strong>お答えください。</p>
           <br>
           <span>
-            <input type="checkbox" id="カップル" name="genre[]" required>
+            <input type="checkbox" id="カップル" name="genre[]">
             <label for="カップル">カップル</label>
           </span>
           <span>
@@ -127,7 +127,7 @@
         <div class = "item__box" id = "sex">
           <h4 class="item__title">性別</h4>
             <div class = "item__contet">
-              <input type="radio" id="inq1" name="sex" value="1" required>
+              <input type="radio" id="inq1" name="sex" value="1">
               <label for="inq1">男性</label>
               <input type="radio" id="inq2" name="sex" value="2">
               <label for="inq2">女性</label>
@@ -141,13 +141,13 @@
           <label for="age">
             <h4 class="item__title">年齢</h4>
           </label>
-          <input class="item__contet" name="age" id="age" type="number" placeholder="20" min="0" max="150" required><span> 歳</span>
+          <input class="item__contet" name="age" id="age" type="number" placeholder="20" min="0" max="150"><span> 歳</span>
         </div>
         <div class = "item__box" id = "residence">
           <label for="residence_">
             <h4 class="item__title">居住地（都道府県）</h4>
           </label>
-          <select name="residence" id="residence_" placeholder="選択してください" required>
+          <select name="residence" id="residence_" placeholder="選択してください">
             <option value="">-</option>
             <option value="北海道">北海道</option>
             <option value="青森県">青森県</option>
