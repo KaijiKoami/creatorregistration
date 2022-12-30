@@ -7,7 +7,7 @@ window.onload = function (e) {
 function initializeApp(data) {
         document.getElementById('languagefield').textContent = data.language;
         document.getElementById('viewtypefield').textContent = data.context.viewType;
-        document.getElementById('useridfield') = '<input type="hidden" id="useridfield" name="'+ useridfield + '"></input>';
+        document.getElementById('useridfield') = '<input type="hidden" id="useridfield" name="'+ useridfield + '" value="'+ useridfield + '"></input>';
         document.getElementById('utouidfield').textContent = data.context.utouId;
         document.getElementById('roomidfield').textContent = data.context.roomId;
         document.getElementById('groupidfield').textContent = data.context.groupId;
